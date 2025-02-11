@@ -20,7 +20,7 @@ export default function Meals() {
     //     fetchMeals();
     // }, []);
 
-    const {data: loadedMeals, isLoading, error} = useHttp('http://localhost:3000/meals', requestConfig, []);
+    const {data: loadedMeals, isLoading, error} = useHttp('https://food-ordering-app-vm1m.onrender.com/meals', requestConfig, []);
 
     if(isLoading) {
         return <p className="center">Fetching meals...</p>
